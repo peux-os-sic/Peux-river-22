@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:i="&amp;ns_ai;"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="레이어_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 256 256"
+   style="enable-background:new 0 0 256 256;"
+   xml:space="preserve"
+   sodipodi:docname="contacts.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"><metadata
+   id="metadata25"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs23" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="2928"
+   inkscape:window-height="1598"
+   id="namedview21"
+   showgrid="false"
+   inkscape:zoom="3.6875"
+   inkscape:cx="120.06602"
+   inkscape:cy="159.72273"
+   inkscape:window-x="144"
+   inkscape:window-y="56"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="g16" />
+<style
+   type="text/css"
+   id="style2">
+	.st0{opacity:0.1;}
+	.st1{fill:#E67828;}
+	.st2{fill:#FFE192;}
+	.st3{fill:#FFFFFF;}
+</style>
+<switch
+   id="switch18">
+	<foreignObject
+   requiredExtensions="http://ns.adobe.com/AdobeIllustrator/10.0/"
+   x="0"
+   y="0"
+   width="1"
+   height="1">
+		
+	</foreignObject>
+	<g
+   i:extraneous="self"
+   id="g16">
+		
+		<path
+   class="st1"
+   d="M 251.7,90.4 C 248.6,67 240.3,45.8 225.7,30.2 v 0 C 210.2,15.6 189,7.3 165.6,4.2 143.2,1.3 128,2 128,2 128,2 112.8,1.3 90.4,4.2 67,7.4 45.8,15.7 30.3,30.3 15.7,45.8 7.4,67 4.3,90.4 1.3,112.8 2.1,128 2.1,128 c 0,0 -0.7,15.2 2.2,37.6 3.1,23.4 11.4,44.6 26,60.1 v 0 c 15.5,14.6 36.7,22.9 60.1,26 22.3,3 37.6,2.2 37.6,2.2 0,0 15.2,0.7 37.6,-2.2 23.4,-3.1 44.6,-11.4 60.1,-26 v 0 c 14.6,-15.5 22.9,-36.7 26,-60.1 3,-22.4 2.2,-37.6 2.2,-37.6 0,0 0.7,-15.2 -2.2,-37.6"
+   id="path10"
+   inkscape:connector-curvature="0"
+   style="fill:#e67828" />
+		<circle
+   class="st2"
+   cx="128"
+   cy="87.900002"
+   r="27.299999"
+   id="circle12"
+   style="fill:#ffe192" />
+		<path
+   class="st3"
+   d="m 179.6,177.2 c -2.6,2.9 -21.5,23.7 -52.3,23.1 -30.3,-0.6 -48.2,-21.4 -50.8,-24.5 0.8,-4.6 3.6,-17.6 15,-28.4 14.1,-13.2 31.1,-13.5 35.9,-13.5 5.6,0 23.2,0.9 37.4,14.9 11,10.8 13.9,23.5 14.8,28.4 z"
+   id="path14"
+   inkscape:connector-curvature="0"
+   style="fill:#ffffff" />
+	</g>
+</switch>
+
+</svg>

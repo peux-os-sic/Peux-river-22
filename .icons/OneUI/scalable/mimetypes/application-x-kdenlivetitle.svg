@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="레이어_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 256 256"
+   style="enable-background:new 0 0 256 256;"
+   xml:space="preserve"
+   sodipodi:docname="application-x-kdenlivetitle.svg"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"><metadata
+   id="metadata17"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+   id="defs15"><filter
+     color-interpolation-filters="sRGB"
+     height="1.078"
+     width="1.0669"
+     y="-.039001"
+     x="-.033428"
+     id="a"><feGaussianBlur
+       id="feGaussianBlur824"
+       stdDeviation="0.20637525" /></filter><filter
+     color-interpolation-filters="sRGB"
+     height="1.2307"
+     width="1.2501"
+     y="-.11533"
+     x="-.12506"
+     id="b"><feGaussianBlur
+       id="feGaussianBlur827"
+       stdDeviation="0.27574037" /></filter></defs><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="2928"
+   inkscape:window-height="1598"
+   id="namedview13"
+   showgrid="false"
+   inkscape:zoom="5.2149125"
+   inkscape:cx="68.915569"
+   inkscape:cy="149.53266"
+   inkscape:window-x="144"
+   inkscape:window-y="56"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="g10" />
+<style
+   type="text/css"
+   id="style2">
+	.st0{fill:#7751AE;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#663399;}
+</style>
+<path
+   class="st0"
+   d="M251.7,90.4c-3.1-23.4-11.4-44.6-26-60.1l0,0c-15.6-14.6-36.7-22.9-60.1-26C143.2,1.3,128,2,128,2  s-15.2-0.7-37.6,2.3C67,7.4,45.8,15.7,30.3,30.3C15.7,45.8,7.5,67,4.3,90.4c-3,22.3-2.2,37.6-2.2,37.6s-0.7,15.2,2.2,37.6  c3.1,23.4,11.4,44.6,26,60.1l0,0c15.6,14.6,36.7,22.9,60.1,26c22.3,3,37.6,2.2,37.6,2.2s15.2,0.7,37.6-2.2  c23.4-3.1,44.6-11.4,60.1-26l0,0c14.6-15.6,22.9-36.7,26-60.1c3-22.3,2.2-37.6,2.2-37.6S254.7,112.8,251.7,90.4"
+   id="path4"
+   style="fill:#748290;fill-opacity:1" />
+<g
+   id="g10">
+	<path
+   class="st1"
+   d="M177.7,193H78.3c-8.4,0-15.3-6.8-15.3-15.3V78.3C63,69.8,69.8,63,78.3,63h99.5c8.4,0,15.3,6.8,15.3,15.3v99.5   C193,186.2,186.2,193,177.7,193z"
+   id="path6" />
+	<path
+   class="st2"
+   d="M100,102.9v50.3c0,4.8,5.2,7.8,9.3,5.4l43.6-25.1c4.1-2.4,4.1-8.4,0-10.8l-43.6-25.1   C105.2,95.1,100,98.1,100,102.9z"
+   id="path8"
+   style="fill:#4d5760;fill-opacity:1" />
+</g>
+</svg>

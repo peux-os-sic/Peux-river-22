@@ -1,0 +1,5 @@
+# For more details check : https://man.archlinux.org/man/wofi.1
+
+width=800
+height=430
+column=3
