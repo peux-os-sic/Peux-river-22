@@ -1,4 +1,4 @@
-# Peux-leftwm-2203
+# Peux-riverwm-2203
 Peux OS Riverwm 22.03 dotfiles
 
 Sample image:
