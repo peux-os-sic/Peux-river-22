@@ -2,7 +2,7 @@
 Peux OS Riverwm 22.05 dotfiles
 
 Sample image:
-![](https://github.com/peux-os-sic/Peux-river-22/blob/main/riv1.png)
+![](https://github.com/peux-os-sic/Peux-river-22/blob/22.05/riv1.png)
 
 Note: 
 1. If you are using Peux Fetcher to pull the repo, you'd need 'Zenity': `sudo pacman -S zenity`
