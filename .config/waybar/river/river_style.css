@@ -1,15 +1,16 @@
 * {
     border: none;
-    border-radius: 10px;
-    /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Material, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-family: Material, Montserrat, Roboto, Helvetica, Arial, sans-serif;    font-size: 13px;
     min-height: 0;
+    margin: 2;
+    padding: 2;
+    border-radius: 15 0 15 0;
+    color: black;
 }
 
 window#waybar {
-    background-color: transparent;
-    color: #ffffff;
+    background-color: #eb6f92;
+    background-image: linear-gradient(95deg, #eb6f92 0%, #191724 65%);
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -18,40 +19,12 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
-
-#workspaces button {
-    background: #1f1f1f;
-    color: #ffffff;
-    border-radius: 20px;
-
+tooltip {
+    background: rgba(43, 48, 59, 0);
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
-#workspaces button:hover {
-    background: lightblue;
-    color: black;
-    border-bottom: 3px solid #ffffff;
-
-}
-
-#workspaces button.focused {
-    background: #1f1f1f;
-}
-
-#workspaces button.focused:hover {
-    background: lightblue;
-    color: black;
-    border-bottom: 3px solid #ffffff;
-
-}
-
-#workspaces button.urgent {
-    background-color: #eb4d4b;
-}
-
-#mode {
-    background-color: #64727D;
-    border-bottom: 3px solid #ffffff;
+tooltip label {
+   color: white;
 }
 
 #clock,
@@ -70,39 +43,21 @@ window#waybar.hidden {
 #custom-updater,
 #custom-snip,
 #custom-wallpaper,
-#tags,
+#custom-layout,
 #taskbar,
 #tray,
+#workspaces,
 #mode,
 #idle_inhibitor,
 #mpd {
-    padding: 0 10px;
-    color: #ffffff;
+    padding: 0 6;
+    color: #161414;
+    background-color: #9ccfd8;
+    border-radius: 20;
 }
 
-#window,
-#workspaces {
+#window{
     margin: 0px 4px;
-}
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0px;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0px;
-}
-
-#clock {
-    background-color: #171717;
-    color: #ffffff;
-}
-
-#battery {
-    background-color: #ffffff;
-    color: #000000;
 }
 
 #battery.charging, #battery.plugged {
@@ -131,137 +86,85 @@ label:focus {
     background-color: #000000;
 }
 
-#cpu {
-    background-color: #171717;
-    color: #ffffff;
-}
-
-#memory {
-    background-color: #171717;
-    color: #ffffff;
-}
-
-#disk {
-    background-color: #171717;
-    color: #ffffff;
-}
-
-#backlight {
-    background-color: #90b1b1;
-}
-
-#network {
-    background-color: #171717;
-    color: #ffffff;
-}
-
 #network.disconnected {
-    background-color: #171717;
     color: red;
 }
 
 #pulseaudio {
-    background-color: #171717;
-    color: #ffffff;
+    font-size: 12;
 }
 
 #pulseaudio.muted {
-    background-color: #171717;
     color: red;
-}
+    font-size: 20;
 
-#custom-media {
-    background-color: #171717;
-    color: white;
-}
-
-#custom-media.custom-spotify {
-    background-color: #171717;
-    color: white;
-
-}
-
-#custom-media.custom-vlc {
-    background-color: #171717;
-    color: white;
 }
 
 #custom-power{
-    background-color: #171717;
     font-size: 18px;
     margin-right: 5px;
-
 }
 
 #custom-launcher{
-    background-color: #171717;
     font-size: 20px;
     margin-left: 5px;
-
+    color: #dd3366;
 }
 
 #custom-layout{
-    background-color: #171717;
-    color: white;
     font-size:20px;
 }
 
 #custom-updater {
-    background-color: #171717;
-    color: #dd3366;
+    color:rgb(130, 0, 0);
+    font-weight: bold;
 }
 
 #custom-snip {
-    background-color: #171717;
-    color: skyblue;
-    font-size: 20px;
+    color: slateblue ;
+    font-size: 20px;    
 }
 
 #custom-wallpaper {
-    background-color: #171717;
-    color: pink;
+    color: rgb(233, 51, 27);
+    font-size: 20px;
+}
+
+#custom-layout {
+    color: rgb(223, 25, 58);
     font-size: 20px;
 }
 
 #tags{
-    background-color: #171717;
     font-size: 20px;
+    margin: 2;
+    padding: 2;
+    border-radius: 20 10 20 10;
+    background-color: #9ccfd8;
 }
 
 #tags button.occupied {
-    color: skyblue;
-    margin: 5px;
-    background-color: #272727;
+    margin: 2;
+    padding: 2;
+    background-color: #4facfe;
+    border-radius: 20 20 20 10;
+
 }
 #tags button.focused {
-    color: black;
-    margin: 5px;
-    background-color: white;
+    margin: 2;
+    padding: 2;
+    background-color: darkolivegreen;
+    border-radius: 20 20 20 10;
 }
 #tags button.urgent{
     color: red;
-    margin: 5px;
-    background-color:white;
-}
-
-
-#taskbar{
-    background-color: #171717;
-    border-radius: 0px 20px 20px 0px;
-}
-
-#temperature {
-    background-color: #171717;
-    color: #ffffff;
+    margin: 2;
+    padding: 2;
+    border-radius: 20 20 20 10;
 }
 
 #temperature.critical {
     background-color: #eb4d4b;
-}
-
-#tray {
-    background-color: #171717;
-    color: #ffffff;
 }
 
 #tray > .passive {
@@ -276,17 +179,10 @@ label:focus {
     color: #ffffff;
 }
 
-#idle_inhibitor {
-    background-color: #171717;
-    border-radius: 20px 0px 0px 20px;
-
-}
-
 #idle_inhibitor.activated {
     background-color: #171717;
     color: #ffffff;
     border-radius: 20px 0px 0px 20px;
-
 }
 
 #language {
@@ -308,3 +204,4 @@ label:focus {
 #keyboard-state > label.locked {
     background: rgba(0, 0, 0, 0.2);
 }
+

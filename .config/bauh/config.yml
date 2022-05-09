@@ -3,6 +3,7 @@ backup:
   enabled: true
   install: null
   mode: incremental
+  remove_method: self
   type: btrfs
   uninstall: null
   upgrade: null
@@ -16,10 +17,10 @@ download:
   multithreaded: true
   multithreaded_client: aria2
 gems:
-- arch
-- web
 - flatpak
+- web
 - appimage
+- arch
 locale: null
 memory_cache:
   data_expiration: 3600
@@ -34,9 +35,9 @@ system:
 ui:
   auto_scale: true
   hdpi: true
-  qt_style: fusion
+  qt_style: qt5ct-style
   scale_factor: 1.0
-  system_theme: true
+  system_theme: false
   table:
     max_displayed: 50
   theme: knight

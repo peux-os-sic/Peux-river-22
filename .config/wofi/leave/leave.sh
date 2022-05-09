@@ -1,8 +1,8 @@
 #!/bin/bash
 
-entries=" Lock\n Logout\n Suspend\n Reboot\n Shutdown"
+entries=" Lock\n Logout\n Suspend\n Hibernate\n Reboot\n Shutdown"
 
-selected=$(echo -e $entries|wofi --width 250 --height 220 --dmenu --cache-file /dev/null | awk '{print tolower($2)}')
+selected=$(echo -e $entries|wofi --width 250 --height 260 --dmenu --cache-file /dev/null | awk '{print tolower($2)}')
 
 case $selected in
   lock)
@@ -11,6 +11,8 @@ case $selected in
     loginctl terminate-user $USER;;
   suspend)
     exec systemctl suspend;;
+  hibernate)
+    exec systemctl hibernate;;
   reboot)
     exec systemctl reboot;;
   shutdown)

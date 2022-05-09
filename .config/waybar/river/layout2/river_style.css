@@ -1,0 +1,187 @@
+* {
+    border: none;
+    font-family: Material, Montserrat, Roboto, Helvetica, Arial, sans-serif;    font-size: 13px;
+    min-height: 0;
+    color: #141117;
+    margin: 3;
+    border-radius: 15 5 15 5;
+}
+
+window#waybar {    
+    background-color: rgba(99, 160, 180, 0.0);
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+tooltip {
+    background-color: #26233a;
+}
+tooltip label {
+   color: #c4a7e7;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#custom-launcher,
+#custom-power,
+#custom-layout,
+#custom-updater,
+#custom-snip,
+#custom-wallpaper,
+#custom-layout,
+#taskbar,
+#tray,
+#mode,
+#idle_inhibitor,
+#mpd {
+    padding: 0 6;
+    color: black;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+
+#window{
+    margin: 0px 4px;
+}
+
+#battery.charging, #battery.plugged {
+    color: #ffffff;
+    background-color: #26A65B;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: #f53c3c;
+    color: #ffffff;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#network.disconnected {
+    color: red;
+}
+
+
+#pulseaudio.muted {
+    font-size: 20;
+    color: red;
+    border-radius: 20px;
+
+}
+
+#custom-power{
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+#custom-launcher{
+    font-size: 20px;
+    margin-left: 5px;
+
+}
+
+#custom-updater {
+    font-weight: bold;
+}
+
+#custom-snip {
+    font-size: 20px;    
+}
+
+#custom-wallpaper {
+    font-size: 18px;
+}
+
+#custom-layout {
+    font-size: 20px;
+}
+
+#tags{
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    font-size: 20px;
+    margin: 3;
+}
+
+#tags button.occupied {
+    background-color: #403d52;
+    color: black;
+    margin: 3;
+}
+#tags button.focused {
+    color: black;
+    margin: 3;
+    background-color: #3e8fb0;
+}
+#tags button.urgent{
+    color: red;
+    margin: 3;
+   
+}
+
+#temperature.critical {
+    background-color: #eb4d4b;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+    background-color: #141117;
+    color: #ffffff;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #141117;
+    color: #ffffff;
+}
+
+#idle_inhibitor.activated {
+    background-color: #171717;
+    color: #ffffff;
+    border-radius: 20px 0px 0px 20px;
+
+}
+
+#language {
+    background-color: #171717;
+    color: #ffffff;
+    min-width: 16px;
+}
+
+#keyboard-state {
+    background: #97e1ad;
+    color: #000000;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0px 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
+

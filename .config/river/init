@@ -11,6 +11,11 @@
 # Use the "logo" key as the primary modifier
 mod="Mod4"
 
+# reload river
+riverctl map normal $mod r spawn "bash ~/.config/river/kp"
+
+riverctl spawn "dbus-update-activation-environment SEATD_SOCK DISPLAY WAYLAND _DISPLAY XDG_CURRENT_DESKTOP=river"
+
 # start alacritty
 riverctl map normal $mod Return spawn 'alacritty'
 
@@ -33,7 +38,7 @@ riverctl map normal $mod+Shift b spawn "bluemail"
 riverctl map normal $mod+Shift x  spawn "bash ~/.config/system_scripts/wayland_session_lock"
 
 # manual network-tray
-# reason being - when spawned, cmst/applet failed to identify the sys-tray's presence
+# reason being - when spawned, cmst/applet fails to identify the sys-tray's presence
 riverctl map normal $mod+Shift c spawn "cmst -m"
 
 #  exit river
@@ -184,11 +189,25 @@ riverctl set-repeat 50 300
 
 # auto starting apps
 riverctl spawn '/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1'
-riverctl spawn 'waybar -c ~/.config/waybar/river/config-river -s ~/.config/waybar/river/river_style.css'
+riverctl spawn "waybar -c ~/.config/waybar/river/config-river -s ~/.config/waybar/river/river_style.css"
 riverctl spawn "~/.config/system_scripts/pkill_bc"
-riverctl spawn dunst
-riverctl spawn "wlsunset"
+riverctl spawn "dunst"
+
+# Clipboard
+# Note : Not auto-starting the copyq program
+
+# Issue : Autostarting the app stops the show/hide feature working
+# How to replicate? : Uncomment the below autostart exec command,
+# in a new user session, launch the app, try to hide it and it won't work.
+# Kill the app, then relaunch, now repeat and it works. 
+
+# Solution : Don't auto-start it.
+#riverctl spawn "copyq && copyq hide"
+
+riverctl spawn "udiskie -A -t"
+riverctl spawn "gammastep-indicator"
 riverctl spawn "swayidle -w timeout 300 ~/.config/system_scripts/wayland_session_lock &"
+#riverctl spawn "cmst -m -w 20"
 riverctl spawn "welcomeapp"
 
 # Set app-ids of views which should float
@@ -197,8 +216,8 @@ riverctl float-filter-add "popup"
 
 # Set app-ids of views which should use client side decorations
 riverctl csd-filter-add "firefox"
-riverctl csd-filter-add "gedit"
-riverctl csd-filter-add "emacs"
+#riverctl csd-filter-add "gedit"
+#riverctl csd-filter-add "emacs"
 
 # Set touchpad by grabbing the event
 # The below for-loop was shared by Adarsh (github@theCode-Breaker)

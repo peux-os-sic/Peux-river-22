@@ -1,6 +1,5 @@
-# Written by lxqt-config-appearance
+# This file is written by LXAppearance. Do not edit.
 [Icon Theme]
 Name=Default
-Comment=Default cursor theme
-Inherits=volantes_cursors
-Size=24
+Comment=Default Cursor Theme
+Inherits=ArcDusk-cursors

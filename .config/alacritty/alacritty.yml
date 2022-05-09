@@ -1,51 +1,41 @@
-font:
-  normal:
-    family: monospace
-    style: Regular
-
-  bold:
-    family: monospace
-    style: Bold
-
-  italic:
-    family: monospace
-    style: Italic
-
-  bold_italic:
-    family: monospace
-    style: Bold Italic
-
-  size: 9
-
-
-# Colors (Hyper)
 colors:
-  # Default colors
   primary:
-    background: '#000000'
-    foreground: '#ffffff'
+    background: '0x232136'
+    foreground: '0xe0def4'
   cursor:
-    text: '#F81CE5'
-    cursor: '#ffffff'
-
-  # Normal colors
+    text: '0x232136'
+    cursor: '0x825B65'
+  vi_mode_cursor:
+    text: '0x191724'
+    cursor: '0x825B65'
+  line_indicator:
+    foreground: None
+    background: None
+  selection:
+    text: CellForeground
+    background: '0x312E45'
   normal:
-    black:   '#000000'
-    red:     '#fe0100'
-    green:   '#33ff00'
-    yellow:  '#feff00'
-    blue:    '#0066ff'
-    magenta: '#cc00ff'
-    cyan:    '#00ffff'
-    white:   '#d0d0d0'
-
-  # Bright colors
+    black:   '0x817c9c'
+    red:     '0xeb6f92'
+    green:   '0x9ccfd8'
+    yellow:  '0xf6c177'
+    blue:    '0x3e8fb0'
+    magenta: '0xc4a7e7'
+    cyan:    '0xea9a97'
+    white:   '0xe0def4'
   bright:
-    black:   '#808080'
-    red:     '#fe0100'
-    green:   '#33ff00'
-    yellow:  '#feff00'
-    blue:    '#0066ff'
-    magenta: '#cc00ff'
-    cyan:    '#00ffff'
-    white:   '#FFFFFF'
+    black:   '0x6e6a86'
+    red:     '0xeb6f92'
+    green:   '0x9ccfd8'
+    yellow:  '0xf6c177'
+    blue:    '0x31748f'
+    magenta: '0xc4a7e7'
+    cyan:    '0xebbcba'
+    white:   '0xe0def4'
+  hints:
+    start:
+     foreground: '#817c9c'
+     background: '#393552'
+    end:
+     foreground: '#59546d'
+     background: '#393552'

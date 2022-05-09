@@ -1,21 +1,30 @@
 {
     "layer": "top",
     "position": "bottom",
-    "height": 35,
-    "spacing": 4,
+    "height": 54,
     "margin-top": 5,
-    "margin-bottom":5,
 
     // Choose the order of the modules
 
     "modules-left":[  "custom/launcher", "custom/media", "tray"],
-    "modules-center":[ "idle_inhibitor", "custom/updater", "custom/snip", "custom/wallpaper",  "pulseaudio", "backlight", "keyboard-state",  "battery", "battery#bat2", "clock"],
-    "modules-right":["river/tags","custom/power"],
+    "modules-center":["river/tags"],
+    "modules-right":[ "custom/layout", "custom/updater", "custom/snip", "custom/wallpaper",  "pulseaudio", "backlight", "keyboard-state",  "battery", "battery#bat2", "clock","custom/power"],
 
     // Modules configuration
 
     "river/tags": {
-        "num-tags": 5,
+        "num-tags": 9,
+        "tag-labels":[
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     },
     "keyboard-state": {
         "numlock": true,
@@ -35,19 +44,21 @@
     },
     "tray": {
         "icon-size": 20,
-        "spacing": 10
+        "spacing": 3,
+        "tooltip": false
     },
     "clock": {
         // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%Y-%m-%d}",
+        "tooltip": false
     },
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% ",
+        "tooltip": false
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -55,12 +66,14 @@
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
-        "format-icons": ["", "", ""]
+        "format-icons": ["", "", ""],
+        "tooltip": false
     },
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["", ""]
+        "format-icons": ["", ""],
+        "tooltip": false
     },
     "battery": {
         "states": {
@@ -74,10 +87,12 @@
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
+        "tooltip": false
     },
     "battery#bat2": {
-        "bat": "BAT2"
+        "bat": "BAT2",
+        "tooltip": false
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -87,16 +102,17 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "on-click-right": "bash ~/.config/rofi/wifi_menu/rofi_wifi_menu"
+        "on-click-right": "bash ~/.config/rofi/wifi_menu/rofi_wifi_menu",
+        "tooltip": false
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}",
-        "format-bluetooth-muted": "{icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth-muted": "{icon} {format_source}",
         "format-muted": "{format_source}",
         "format-source": "",
-        "format-source-muted": "",
+        "format-source-muted": "",
         "format-icons": {
             "headphone": "",
             "hands-free": "",
@@ -106,7 +122,8 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pavucontrol",
+        "tooltip": false
     },
     "custom/media": {
         "format": "{icon} {}",
@@ -123,27 +140,37 @@
     "custom/launcher":{
         "format": " ",
         "on-click": "wofi --show drun",
-        "on-click-right": "killall wofi"
+        "on-click-right": "killall wofi",
+        "tooltip": false
     },
     "custom/power":{
         "format": " ",
         "on-click": "bash ~/.config/wofi/leave/leave.sh",
-        "on-click-right": "killall wlogout"
+        "on-click-right": "killall wlogout",
+        "tooltip": false
     },
     "custom/updater":{
         "format": "{} Update(s)",
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
         "interval": 15,
-        "on-click": "alacritty -e yay -Syu && notify-send 'The system has been updated' "
+        "on-click": "alacritty -e yay -Syu && notify-send 'The system has been updated' ",
+        "tooltip": false
     },
     "custom/snip":{
         "format": "",
-        "on-click": "grimshot --notify save area $HOME/Pictures/$(zenity --entry --text 'Set filename:' --entry-text '.png')"
+        "on-click": "grimshot --notify save area $HOME/Pictures/$(zenity --entry --text 'Set filename:' --entry-text '.png')",
+        "tooltip": false
     },
     "custom/wallpaper":{
         "format":"",
-        "on-click": "bash ~/.config/system_scripts/pkill_bc"
+        "on-click": "bash ~/.config/system_scripts/pkill_bc",
+        "tooltip": false
+    },
+    "custom/layout":{
+        "format": "",
+        "on-click": "bash ~/.config/system_scripts/rlayout.sh",
+        "tooltip": false
     }
 }
 
